@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application Received — Dark Canvas Merch</title>
+  <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'night-ink': '#0C090A',
+            'deep-charcoal': '#1A1A1B',
+            'mustard-yellow': '#FFDE59',
+            'cold-chrome': '#F5F5F7',
+            'muted-silver': '#C0C0C0',
+            'gunmetal': '#6E6E73',
+          },
+          fontFamily: {
+            heading: ['Jost', 'sans-serif'],
+            body: ['Jost', 'sans-serif'],
+          },
+          maxWidth: {
+            store: '84rem',
+            reading: '46rem',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background-color: #0C090A; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up-1 { animation: fadeUp 0.7s ease forwards; opacity: 0; }
+    .fade-up-2 { animation: fadeUp 0.7s ease 0.15s forwards; opacity: 0; }
+    .fade-up-3 { animation: fadeUp 0.7s ease 0.3s forwards; opacity: 0; }
+    .fade-up-4 { animation: fadeUp 0.7s ease 0.45s forwards; opacity: 0; }
+  </style>
+</head>
+<body class="bg-night-ink font-body text-cold-chrome antialiased selection:bg-mustard-yellow selection:text-night-ink min-h-screen flex flex-col">
+
+  <header class="border-b border-white/10 bg-night-ink">
+    <div class="mx-auto flex max-w-store items-center justify-between px-6 py-5 lg:px-8">
+      <a href="index.html" class="flex items-center flex-shrink-0">
+        <img src="https://res.cloudinary.com/dragon-fire-design-studio/image/upload/f_auto,q_90/v1777279041/Dark%20Canvas/darkcanvas-logo_xzdhmn.svg" alt="Dark Canvas Merch" class="h-8 w-auto md:h-9" />
+      </a>
+      <nav class="hidden items-center gap-8 text-sm uppercase tracking-[0.08em] text-muted-silver md:flex">
+        <a href="index.html" class="transition hover:text-cold-chrome">Store</a>
+        <a href="for-bands.html" class="transition hover:text-cold-chrome">For Bands</a>
+        <a href="for-bands.html#faq" class="transition hover:text-cold-chrome">FAQ</a>
+      </nav>
+      <a href="index.html" class="inline-flex items-center justify-center border border-mustard-yellow px-5 py-3 text-[0.88rem] font-[600] uppercase tracking-[0.08em] text-cold-chrome transition hover:bg-mustard-yellow hover:text-night-ink">
+        Back to Store
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-1 flex items-center">
+    <div class="mx-auto max-w-store w-full px-6 py-24 lg:px-8 lg:py-32">
+      <div class="max-w-reading">
+
+        <p class="fade-up-1 text-[0.82rem] font-[600] uppercase tracking-[0.22em] text-mustard-yellow">
+          Application Received
+        </p>
+
+        <h1 class="fade-up-2 mt-5 text-[3.4rem] font-[700] uppercase leading-[0.98] tracking-[0.02em] text-cold-chrome sm:text-[4.4rem] lg:text-[5.1rem]">
+          We've got it.
+        </h1>
+
+        <p class="fade-up-3 mt-8 text-[1.08rem] font-[450] leading-8 text-muted-silver">
+          Every application is reviewed by hand. If the fit is right, we'll be in touch.
+        </p>
+
+        <div class="fade-up-4 mt-12 border-t border-white/10 pt-10">
+          <a href="index.html" class="inline-flex items-center justify-center border border-mustard-yellow bg-mustard-yellow px-6 py-4 text-[0.95rem] font-[700] uppercase tracking-[0.08em] text-night-ink transition hover:opacity-90">
+            Back to Dark Canvas
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-white/10 bg-night-ink">
+    <div class="mx-auto max-w-store px-6 py-8 lg:px-8">
+      <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+        <p class="text-xs uppercase tracking-[0.16em] text-gunmetal">© 2026 Dark Canvas Merch. All rights reserved.</p>
+        <p class="text-xs uppercase tracking-[0.16em] text-gunmetal">Shop The Art Of Metal.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
